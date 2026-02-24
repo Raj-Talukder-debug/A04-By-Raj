@@ -17,7 +17,7 @@ for(const btn of allInterviewButtons){
         const currentCountText = interviewCountElement.innerText;
         let currentCount = Number(currentCountText);
         interviewCountElement.innerText = currentCount +1;
-        step2.style.display = 'none';
+        step2.disable = true;
 
         
 
@@ -31,7 +31,7 @@ for(const btn of allInterviewButtons){
         }
         
         
-    },{once:true})
+    })
 }
 
 
@@ -50,7 +50,7 @@ for(const btn of allRejectedButtoms){
         const currentCountText = rejectedCountElement.innerText;
         let currentCount = Number(currentCountText);
         rejectedCountElement.innerText = currentCount + 1;
-        step2.style.display = 'none';
+        step2.disable = true;
 
 
         const fullCard = step3.parentNode;
@@ -62,7 +62,7 @@ for(const btn of allRejectedButtoms){
             rejectEmptyImg.classList.add('hidden');
         }
 
-    },{once:true})
+    })
 }
 
 
