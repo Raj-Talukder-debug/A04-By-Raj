@@ -1,5 +1,5 @@
-// For interview
-// let interviewTab = [];
+// For interview btn
+
 const allInterviewButtons = document.querySelectorAll('.interview-btn');
 for(const btn of allInterviewButtons){
     btn.addEventListener('click',function(event){
@@ -35,7 +35,7 @@ for(const btn of allInterviewButtons){
 }
 
 
-// for rejected
+// for reject btn
 
 const allRejectedButtoms = document.querySelectorAll('.rejected-btn');
 for(const btn of allRejectedButtoms){
@@ -51,6 +51,16 @@ for(const btn of allRejectedButtoms){
         let currentCount = Number(currentCountText);
         rejectedCountElement.innerText = currentCount + 1;
         step2.style.display = 'none';
+
+
+        const fullCard = step3.parentNode;
+        const rejectContainer = document.getElementById('reject-cards-container');
+        rejectContainer.appendChild(fullCard);
+
+        const rejectEmptyImg = document.getElementById('reject-emty-img');
+        if(rejectEmptyImg){
+            rejectEmptyImg.classList.add('hidden');
+        }
 
     },{once:true})
 }
