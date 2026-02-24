@@ -74,6 +74,7 @@ for(const btn of allRejectedButtoms){
 const allTrash = document.querySelectorAll('.fa-trash-can');
 
 for (const icon of allTrash){
+    icon.style.cursor = 'pointer'
     icon.addEventListener('click',function(event){
         const card = event.target.parentNode.parentNode.parentNode.parentNode;
         // console.log(card)
@@ -112,14 +113,3 @@ for (const icon of allTrash){
 
 
 
-// FOR ID 
-// document.getElementById('interview').addEventListener('click', function(){
-//     const notAppliedInput = document.getElementById('not-applied');
-//     notAppliedInput.innerText = 'Interview';
-    
-//     const interviewCountElement = document.getElementById('interview-count');
-//     const currentCountText = interviewCountElement.innerText;
-//     let currentCount = Number(currentCountText);
-//     interviewCountElement.innerText = currentCount + 1;
-    
-// },{once:true})
