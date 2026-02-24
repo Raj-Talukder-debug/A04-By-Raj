@@ -69,7 +69,31 @@ for(const btn of allRejectedButtoms){
 
 
 
+// active trash icon
 
+const allTrash = document.querySelectorAll('.fa-trash-can');
+
+for (const icon of allTrash){
+    icon.addEventListener('click',function(event){
+        const card = event.target.parentNode.parentNode.parentNode.parentNode;
+        // console.log(card)
+        card.remove();
+
+        const jobCounts = document.getElementById('job-counts');
+        let currentCount = parseInt(jobCounts.innerText);
+        if(currentCount>0){
+            jobCounts.innerText = (currentCount - 1 ) + "jobs";
+        }
+
+        const totalCounts = document.getElementById('total-count');
+        let currentCount2 = parseInt(totalCounts.innerText);
+        if(currentCount2>0){
+            totalCounts.innerText = currentCount2 - 1;
+        }
+
+    });
+    
+}
 
 
 
