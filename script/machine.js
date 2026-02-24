@@ -1,17 +1,24 @@
-// Interview & rejected Machine
+// // data store for interview tab
+//         const company = step3.querySelector('.card-title').innerText;
+//         const position = step3.querySelector('p').innerText;
+//         const info = step3.querySelectorAll('p')[1].innerText;
+//         const details = step3.querySelectorAll('p')[2].innerText;
 
-// get value
-function getNumberValueById(id){
-    const text = document.getElementById(id).innerText;
-    return text;
-}
+//         // make object 
 
+//         const jobData = {
+//             companyName : company,
+//             jobTitle : position,
+//             jobInfo : info,
+//             jobDetails : details
+//         };
 
-// set value
+//         interviewTab.push(jobData);
+//         // console.log(interviewTab)
 
-function setTextById(id, value){
-    document.getElementById(id).innerText = value ;
-}
+//         // inner html part
 
-
+//         for(const item of interviewTab){
+            
+//         }
 

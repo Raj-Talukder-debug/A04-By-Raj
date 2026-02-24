@@ -1,16 +1,16 @@
 // For interview
-
+// let interviewTab = [];
 const allInterviewButtons = document.querySelectorAll('.interview-btn');
 for(const btn of allInterviewButtons){
     btn.addEventListener('click',function(event){
         const step1 = event.target.parentNode;
-        // console.log(step1);
+        
         const step2 = step1.parentNode;
-        // console.log(step2);
+        
         const step3 = step2.parentNode;
-        // console.log(step3);
+        
         const notAppliedBtn = step3.querySelector('.not-applied-btn');
-        // console.log(notAppliedBtn);
+        
         notAppliedBtn.innerText = 'Interview';
 
         const interviewCountElement = document.getElementById('interview-count');
@@ -18,6 +18,11 @@ for(const btn of allInterviewButtons){
         let currentCount = Number(currentCountText);
         interviewCountElement.innerText = currentCount +1;
         step2.style.display = 'none';
+
+        
+
+        
+        
         
     },{once:true})
 }

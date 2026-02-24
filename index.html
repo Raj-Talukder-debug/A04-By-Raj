@@ -68,14 +68,14 @@
         <!-- btn tab div -->
         <div class="three-tab mt-10 w-full max-w-[1110px] ">
 
-            <button class="btn btn-soft btn-primary">All</button>
-            <button class="btn btn-soft btn-primary">Interview</button>
-            <button class="btn btn-soft btn-primary">Rejected</button>
+            <button id="all" class="btn btn-soft btn-primary">All</button>
+            <button id="interview" class="btn btn-soft btn-primary">Interview</button>
+            <button id="rejected" class="btn btn-soft btn-primary">Rejected</button>
             
         </div>
         <!-- card -->
 
-        <div class="mt-10 w-full max-w-[1110px] space-y-5">
+        <div id="all-jobs-container" class="mt-10 w-full max-w-[1110px] space-y-5 hidden">
 
             <div class="card card-border bg-base-200 border-r-8 w-full">
                 <div class="card-body">
@@ -312,7 +312,107 @@
     </section>
 
 
+
+
+
+    <!-- interview tab section -->
+     
+
+        <!-- <section class="section-tilte   max-w-screen-xl mx-auto sticky top-0 z-50 hidden">
+        
+            <div class="w-full max-w-[1110px] grid grid-cols-3 gap-5 mt-10">
+        
+                <div class="total bg-base-100 shadow p-5">
+                    <p>Total</p>
+                    <h3 class="font-bold">8</h3>
+                </div>
+                <div class="interview bg-base-100 shadow p-5">
+                    <p>Interview</p>
+                    <h3 id="interview-count" class="font-bold">0</h3>
+                </div>
+                <div class="rejected bg-base-100 shadow p-5">
+                    <p>Rejected</p>
+                    <h3 id="rejected-count" class="font-bold">0</h3>
+                </div>
+            </div>
+        
+        </section> -->
+        
+        
+        <section id="interview-page-view" class="available-job-section max-w-screen-xl mx-auto hidden">
+        
+            <!-- <div class="flex justify-between w-full max-w-[1110px] mt-10">
+        
+                <div class="left">
+                    <h3 class="font-bold">Available Jobs</h3>
+                </div>
+        
+                <div class="right">
+                    <h4>0 jobs</h4>
+                </div>
+            </div> -->
+
+            <!-- <div class="three-tab mt-10 w-full max-w-[1110px] ">
+            
+                <button class="btn btn-soft btn-primary">All</button>
+                <button class="btn btn-soft btn-primary">Interview</button>
+                <button class="btn btn-soft btn-primary">Rejected</button>
+            
+            </div> -->
+            
+            <div id="dynamic" class="empty-img">
+                <div class="img flex justify-center mt-10">
+                    <img src="jobs.png" alt="">
+                    
+                </div>
+                <div class="text-center mt-5">
+                    <h2>No jobs available</h2>
+                    <p>Check back soon for new job opportunities</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- rejected -->
+
+        <section id="rejected-page-view" class="available-job-section max-w-screen-xl mx-auto hidden">
+        
+            <!-- <div class="flex justify-between w-full max-w-[1110px] mt-10">
+        
+                <div class="left">
+                    <h3 class="font-bold">Available Jobs</h3>
+                </div>
+        
+                <div class="right">
+                    <h4>0 jobs</h4>
+                </div>
+            </div> -->
+
+            <!-- <div class="three-tab mt-10 w-full max-w-[1110px] ">
+            
+                <button class="btn btn-soft btn-primary">All</button>
+                <button class="btn btn-soft btn-primary">Interview</button>
+                <button class="btn btn-soft btn-primary">Rejected</button>
+            
+            </div> -->
+
+            <div id="dynamic" class="empty-img">
+                <div class="img flex justify-center mt-10">
+                    <img src="jobs.png" alt="">
+                    
+                </div>
+                <div class="text-center mt-5">
+                    <h2>No jobs available</h2>
+                    <p>Check back soon for new job opportunities</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
     <script src="script/machine.js"></script>
+    <script src="script/tab.js"></script>
     <script src="script/interview.js"></script>
 </body>
 </html>
