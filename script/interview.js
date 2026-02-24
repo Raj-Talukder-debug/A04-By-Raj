@@ -21,7 +21,14 @@ for(const btn of allInterviewButtons){
 
         
 
-        
+        const fullCard = step3.parentNode;
+        const interViewContainer = document.getElementById('interview-cards-container');
+        interViewContainer.appendChild(fullCard);
+
+        const emptyView = document.getElementById('empty-img');
+        if(emptyView){
+            emptyView.classList.add('hidden')
+        }
         
         
     },{once:true})

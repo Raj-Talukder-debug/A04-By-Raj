@@ -5,6 +5,7 @@ const allJobsContainers = document.getElementById('all-jobs-container');
 const interviewPage = document.getElementById('interview-page-view');
 const rejectedViewPage = document.getElementById('rejected-page-view')
 
+allJobsContainers.classList.remove('hidden');
 
 document.getElementById('all').addEventListener('click',function(){
     allJobsContainers.classList.remove('hidden');
